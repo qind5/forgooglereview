@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Spreak</title>
+  <meta name="description" content="Spreak pricing plans: Weekly at $7.99 and Monthly at $23.99. Choose the plan that fits your interview preparation needs.">
+  <link rel="canonical" href="https://winterview.app/pricing">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="img/logo.png" alt="Spreak" class="nav-logo-img">
+          Spreak
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Pricing -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Simple, transparent pricing</h2>
+      <p class="section-subtitle">Choose the plan that fits your interview preparation schedule. No hidden fees, cancel anytime.</p>
+
+      <div class="pricing-grid">
+        <!-- Weekly Plan -->
+        <div class="pricing-card">
+          <h3>Weekly</h3>
+          <div class="price">$7.99</div>
+          <div class="price-period">per week</div>
+          <p class="price-desc">Perfect for targeted prep before an upcoming interview.</p>
+          <ul class="pricing-features">
+            <li>Unlimited AI interview practice sessions</li>
+            <li>Role-specific question generation</li>
+            <li>Detailed feedback on every response</li>
+            <li>Session history &amp; progress tracking</li>
+            <li>Email support</li>
+          </ul>
+        </div>
+
+        <!-- Monthly Plan -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Best Value</div>
+          <h3>Monthly</h3>
+          <div class="price">$23.99</div>
+          <div class="price-period">per month</div>
+          <p class="price-desc">Ideal for active job seekers managing multiple applications.</p>
+          <ul class="pricing-features">
+            <li>Everything in Weekly, plus:</li>
+            <li>Practice across multiple job roles</li>
+            <li>Advanced feedback &amp; performance analytics</li>
+            <li>Priority email support</li>
+            <li>Save and export session transcripts</li>
+            <li>Cancel anytime - no long-term commitment</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="pricing-note">All plans are billed in USD. Subscriptions can be canceled at any time. Refunds are handled in accordance with our <a href="terms.html">Terms of Service</a>.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Join the waitlist today</h2>
+        <p>Be the first to know when Spreak launches and get early access pricing.</p>
+        <form class="waitlist-form" id="pricingWaitlistForm" onsubmit="handleWaitlistSubmit(event, 'pricingWaitlistForm', 'pricingSuccess')">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Join Waitlist</button>
+        </form>
+        <div class="waitlist-success" id="pricingSuccess" style="margin-top: 16px;">
+          &#9989; Thanks for joining! We'll notify you when Spreak launches.
+        </div>
+        <p class="waitlist-note" style="color: rgba(255,255,255,0.85);">We'll only use your email to notify you about Spreak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="Spreak" class="footer-logo-img">
+          <span class="footer-logo-text">Spreak</span>
+        </div>
+        <p class="company-name">Beijing Enough Fun Technology Co., Ltd.</p>
+        <p class="company-address">Room 1119-92, 11th Floor, No. 18 Zhongguancun Street, Haidian District, Beijing, China</p>
+        <div class="footer-links">
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <p class="footer-email"><a href="mailto:support@winterview.app">support@winterview.app</a></p>
+        <p class="copyright">&copy; 2026 Beijing Enough Fun Technology Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleWaitlistSubmit(event, formId, successId) {
+      event.preventDefault();
+      var form = document.getElementById(formId);
+      form.style.display = 'none';
+      var note = form.parentElement.querySelector('.waitlist-note');
+      if (note) note.style.display = 'none';
+      document.getElementById(successId).classList.add('show');
+    }
+  </script>
+</body>
+</html>

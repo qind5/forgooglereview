@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spreak - AI-Powered Interview Preparation for Job Seekers</title>
+  <meta name="description" content="Spreak is an AI-powered interview preparation tool that helps job seekers practice and improve their interview performance through realistic, AI-driven simulations.">
+  <meta name="keywords" content="interview preparation, AI interview practice, job interview simulator, interview coaching, mock interview, speaking practice">
+  <meta property="og:title" content="Spreak - AI-Powered Interview Preparation">
+  <meta property="og:description" content="Practice and improve your interview performance through realistic, AI-driven simulations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://winterview.app/">
+  <meta property="og:image" content="https://winterview.app/img/logo.png">
+  <link rel="canonical" href="https://winterview.app/">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="img/logo.png" alt="Spreak" class="nav-logo-img">
+          Spreak
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Now accepting early access sign-ups
+      </div>
+      <h1>Ace your next interview with <span class="highlight">AI-powered practice</span></h1>
+      <p>Spreak helps job seekers practice and improve their interview performance through realistic, AI-driven simulations tailored to your target role.</p>
+
+      <!-- Waitlist Form -->
+      <div id="waitlist">
+        <form class="waitlist-form" id="waitlistForm" onsubmit="handleWaitlistSubmit(event, 'waitlistForm', 'waitlistSuccess')">
+          <input type="email" id="waitlistEmail" placeholder="Enter your email" required>
+          <button type="submit">Join Waitlist</button>
+        </form>
+        <div class="waitlist-success" id="waitlistSuccess">
+          &#9989; Thanks for joining! We'll notify you when Spreak launches.
+        </div>
+        <p class="waitlist-note">We'll only use your email to notify you about Spreak. See our <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+
+      <!-- Product Mockup -->
+      <div class="hero-mockup">
+        <div class="mockup-browser-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="url">app.spreak.ai/session/product-designer</span>
+        </div>
+        <div class="mockup-content">
+          <div class="mockup-sidebar">
+            <h4>Practice Sessions</h4>
+            <div class="session-item active">Product Designer @ Tech Co</div>
+            <div class="session-item">Frontend Engineer @ Startup</div>
+            <div class="session-item">PM @ Fintech</div>
+            <div class="session-item">UX Researcher @ Agency</div>
+          </div>
+          <div class="mockup-main">
+            <div class="mockup-chat-msg">
+              <div class="mockup-avatar ai">AI</div>
+              <div class="mockup-bubble">Welcome! Let's practice for your Product Designer interview. Can you walk me through a project where you had to balance user needs with business constraints?</div>
+            </div>
+            <div class="mockup-chat-msg">
+              <div class="mockup-avatar user">You</div>
+              <div class="mockup-bubble user">Sure, at my previous company I led the redesign of our onboarding flow...</div>
+            </div>
+            <div class="mockup-input-bar">
+              <div class="input">Type your response...</div>
+              <button class="send-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <h2 class="section-title">Everything you need to prepare</h2>
+      <p class="section-subtitle">Spreak combines AI technology with proven interview frameworks to give you the practice you need to succeed.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#129302;</div>
+          <h3>AI-Driven Simulations</h3>
+          <p>Practice with an AI interviewer that adapts to your responses, asks follow-up questions, and simulates real interview scenarios for your specific role and industry.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#127919;</div>
+          <h3>Role-Specific Questions</h3>
+          <p>Upload a job description and your resume. Spreak generates tailored interview questions based on the actual requirements of the position you're targeting.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128202;</div>
+          <h3>Instant Feedback</h3>
+          <p>Receive detailed feedback on your responses, including clarity, structure, relevance, and areas for improvement - so you can refine your answers before the real interview.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128172;</div>
+          <h3>Realistic Conversation</h3>
+          <p>Engage in natural, conversational practice sessions that mirror the flow of a real interview - complete with follow-up questions and realistic dialogue.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128190;</div>
+          <h3>Session History</h3>
+          <p>Track your progress over time. Review past sessions, compare your responses, and see how your interview skills improve with each practice round.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#127757;</div>
+          <h3>Built for Global Talent</h3>
+          <p>Designed specifically for non-native English speakers targeting roles in English-speaking markets. Practice in a supportive, judgment-free environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">How it works</h2>
+      <p class="section-subtitle">Three simple steps to better interview performance.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Upload Your Details</h3>
+          <p>Share your resume and the job description for the role you're targeting. Spreak uses this to create a personalized interview experience.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Practice with AI</h3>
+          <p>Engage in a realistic, conversational interview simulation. Answer questions, receive follow-ups, and experience the flow of a real interview.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Get Feedback &amp; Improve</h3>
+          <p>Receive actionable feedback on each response. Identify your strengths, work on weak areas, and track your improvement across sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Ready to ace your next interview?</h2>
+        <p>Join the waitlist and be the first to know when Spreak launches.</p>
+        <form class="waitlist-form" id="waitlistForm2" onsubmit="handleWaitlistSubmit(event, 'waitlistForm2', 'waitlistSuccess2')">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Join Waitlist</button>
+        </form>
+        <div class="waitlist-success" id="waitlistSuccess2" style="margin-top: 16px;">
+          &#9989; Thanks for joining! We'll notify you when Spreak launches.
+        </div>
+        <p class="waitlist-note" style="color: rgba(255,255,255,0.85);">We'll only use your email to notify you about Spreak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="Spreak" class="footer-logo-img">
+          <span class="footer-logo-text">Spreak</span>
+        </div>
+        <p class="company-name">Beijing Enough Fun Technology Co., Ltd.</p>
+        <p class="company-address">Room 1119-92, 11th Floor, No. 18 Zhongguancun Street, Haidian District, Beijing, China</p>
+        <div class="footer-links">
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <p class="footer-email"><a href="mailto:support@winterview.app">support@winterview.app</a></p>
+        <p class="copyright">&copy; 2026 Beijing Enough Fun Technology Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleWaitlistSubmit(event, formId, successId) {
+      event.preventDefault();
+      var form = document.getElementById(formId);
+      form.style.display = 'none';
+      var note = form.parentElement.querySelector('.waitlist-note');
+      if (note) note.style.display = 'none';
+      document.getElementById(successId).classList.add('show');
+    }
+  </script>
+</body>
+</html>
