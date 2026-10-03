@@ -1,0 +1,21 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange squircle background -->
+  <rect width="120" height="120" rx="28" fill="#FF6B35"/>
+  
+  <!-- Subtle gradient overlay for depth -->
+  <defs>
+    <linearGradient id="gradOverlay" x1="0" y1="0" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8C42" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E85A2B" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#gradOverlay)"/>
+  
+  <!-- "W" letter -->
+  <text x="60" y="78" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="62" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-2">W</text>
+  
+  <!-- Decorative burst dots (matching original Spreak logo style) -->
+  <circle cx="96" cy="24" r="4" fill="#FFD4B8" opacity="0.8"/>
+  <circle cx="104" cy="36" r="2.5" fill="#FFD4B8" opacity="0.6"/>
+  <circle cx="24" cy="96" r="3" fill="#FFD4B8" opacity="0.5"/>
+</svg>
